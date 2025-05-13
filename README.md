@@ -11,11 +11,11 @@ All of these will evaluate correctly, and also be serialized as properly parenth
 
 ## 🔧 Features
 
-✅ Evaluate mathematical expressions  
-✅ Serialize expressions into string format with full bracket structure  
-✅ Handles deeply nested binary expressions  
-✅ Custom error type for overflow  
-✅ Async evaluation support using `tokio`
+Evaluate mathematical expressions.
+Serialize expressions into string format with full bracket structure.
+Handles deeply nested binary expressions. 
+Custom error type for overflow.
+Async evaluation support using `tokio`.
 
 ---
 
@@ -29,8 +29,6 @@ MyRustProject/
 └── README.md # This file
 
 ---
-
-## 🚀 Getting Started
 
 ### Prerequisites
 - 🦀 [Install Rust](https://www.rust-lang.org/tools/install)
