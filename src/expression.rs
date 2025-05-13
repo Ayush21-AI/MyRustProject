@@ -45,7 +45,6 @@ impl fmt::Display for Expression {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
             Expression::Constant(val) => {
-                // Use {:.6} for 6 decimal places
                 write!(f, "{:.6}", val)
             }
             Expression::BinaryExpr { op, left, right } => {
