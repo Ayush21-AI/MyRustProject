@@ -16,7 +16,6 @@ impl fmt::Display for Error {
 
 impl StdError for Error {}
 
-// Operator enum
 #[derive(Clone, Debug)]
 pub enum Operator {
     Add,
@@ -32,7 +31,6 @@ impl fmt::Display for Operator {
     }
 }
 
-// Expression enum
 #[derive(Clone, Debug)]
 pub enum Expression {
     Constant(f64),
@@ -57,7 +55,6 @@ impl fmt::Display for Expression {
     }
 }
 
-// Expression context for constructing and evaluating expressions
 #[derive(Clone)]
 pub struct ExpressionContext;
 
@@ -82,7 +79,6 @@ impl ExpressionContext {
         match expr {
             Expression::Constant(val) => Ok(*val),
             Expression::BinaryExpr { op, left, right } => {
-                // Box recursive async calls to fix E0733
                 let left_val = Box::pin(self.eval(left)).await?;
                 let right_val = Box::pin(self.eval(right)).await?;
                 match op {
