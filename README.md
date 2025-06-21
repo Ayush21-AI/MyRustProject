@@ -1,4 +1,4 @@
-# 🦀 MyRustProject – Expression Evaluator in Rust
+# 🦀 RustProject – Expression Evaluator in Rust
 
 This is a Rust-based binary expression evaluator that supports constant and nested expressions with `+` and `-` operations. It evaluates expressions like:
 
